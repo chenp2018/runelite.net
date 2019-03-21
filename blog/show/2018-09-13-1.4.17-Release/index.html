@@ -1,0 +1,119 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><meta name="google-site-verification" content="_wxrTRAcgx3bHof630x75_YKSXklUH55NkOAA_5GfmU"><link rel="manifest" href="/manifest.json"><link rel="shortcut icon" href="/favicon.ico"><title>1.4.17 Release - RuneLite</title><meta name="description" content="Loot tracker grouping, home and minigame cooldown timers, minigame and quest world map icons, and various bug fixes and enhancements"><meta name="author" content="Jordan"><script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=default,Array.prototype.includes"></script><script type="text/javascript">!function(i){if(i.search){var l={};i.search.slice(1).split("&").forEach(function(i){var a=i.split("=");l[a[0]]=a.slice(1).join("=").replace(/~and~/g,"&")}),void 0!==l.p&&window.history.replaceState(null,null,i.pathname.slice(0,-1)+(l.p||"")+(l.q?"?"+l.q:"")+i.hash)}}(window.location)</script><link href="/static/css/84.a04f18ec.chunk.css" rel="stylesheet"><link href="/static/css/main.a563b2ad.chunk.css" rel="stylesheet"><script charset="utf-8" src="/static/js/3.e1464c82.chunk.js"></script><script charset="utf-8" src="/static/js/53.ad2ba249.chunk.js"></script></head><body><div id="root"><div style="height: 100%;"><div class="fixed-top animated loader" style="display: none;"></div><nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white"><a class="navbar-brand" activeclassname="active" href="/"><img src="/img/logo.png" class="icon" alt="RuneLite"> Home</a><input type="checkbox" id="navbar-check-box"><label for="navbar-check-box" class="navbar-toggler"><span class="navbar-toggler-icon"></span></label><div class="collapse navbar-collapse" id="navbar"><ul class="navbar-nav"><li class="nav-item"><a class="nav-link" activeclassname="active" href="/features"><i class="fas fa-cogs"></i> Features</a></li><li class="nav-item"><a class="nav-link" activeclassname="active" href="/blog"><i class="fas fa-newspaper"></i> Blog</a></li><li class="nav-item"><a class="nav-link" href="https://github.com/runelite/runelite/wiki"><i class="fas fa-file-alt"></i> Wiki</a></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown"><i class="fas fa-font"></i> API</a><div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="https://static.runelite.net/api/runelite-api/">RuneLite API</a><a class="dropdown-item" href="https://static.runelite.net/api/runelite-client/">RuneLite Client API</a></div></li><li class="nav-item"><a class="nav-link" activeclassname="active" href="/tag"><i class="fas fa-code"></i> Tags</a></li></ul><ul class="navbar-nav ml-auto"><li class="nav-item"><a class="nav-link" href="https://discord.gg/mePCs8U" title="Discord"><i class="fab fa-discord"></i><span class="d-lg-none"> Discord</span></a></li><li class="nav-item"><a class="nav-link" href="https://twitter.com/RuneLiteClient" title="Twitter"><i class="fab fa-twitter"></i><span class="d-lg-none"> Twitter</span></a></li><li class="nav-item"><a class="nav-link" href="https://github.com/runelite" title="GitHub"><i class="fab fa-github"></i><span class="d-lg-none"> GitHub</span></a></li><li class="nav-item"><a class="nav-link" href="https://www.patreon.com/runelite"><i class="fab fa-patreon"></i> Become a patron</a></li><li class="nav-item"><a class="nav-link" href="https://github.com/runelite/runelite/stargazers"><i class="fas fa-star"></i>  Stargazers</a></li><li class="nav-item"><form class="form-inline"><button class="btn btn-primary" type="button"><i class="fas fa-user"></i> Login</button></form></li></ul></div></nav><div class="container" id="layout"><h1>1.4.17 Release</h1><p class="text-muted">6 months ago by Jordan</p><hr><div class="markdown-body"><div><p>The Loot tracker plugin now has a setting to group loot by NPC/event. In addition, a right-click
+menu has been added to view details of a specific NPC's loots. Thanks to
+<a href="https://github.com/psikoi">@psikoi</a> for this feature!</p>
+<p><img src="/img/blog/1.4.17-Release/grouped-loot-tracker.gif" alt="grouped-loot-tracker"></p>
+<p>Home and minigame teleports will now add a timer for their cooldowns.</p>
+<p><img src="/img/blog/1.4.17-Release/home-minigame-teleport-timers.png" alt="home-minigame-teleport-timers"></p>
+<p>The World Map plugin now displays tooltips for quest and minigame names, thanks to
+<a href="https://github.com/johnhamilto">@johnhamilto</a> and <a href="https://github.com/MagicfTail">@MagicfTail</a>.</p>
+<p><img src="/img/blog/1.4.17-Release/quest-tooltips.png" alt="quest-tooltips">
+<img src="/img/blog/1.4.17-Release/minigame-tooltips.png" alt="minigame-tooltips"></p>
+<p>There are also numerous smaller improvements and bug fixes, including:</p>
+<ul>
+<li>The Achievement Diary plugin has been fixed</li>
+<li>The idle notifier now considers mouse clicks, not mouse movement, to determine when players are
+no longer idle for the Idle Notifier plugin</li>
+<li>Fixed Fishing plugin inventory and equipment check</li>
+<li>The Player-owned House plugin now displays the new Troll stronghold teleport portal</li>
+<li>The farming tracker now tracks the Weiss herb patch</li>
+<li>The bottom-right snap corner no longer moves when the collapsible chatbox is opened</li>
+<li>Cutting sacred eels will no longer incorrectly trigger the Idle Notifier plugin</li>
+<li>Time tracking tabs have been better ordered by priority</li>
+<li>The vanilla Tithe farm overlay has been made layoutable and now replaces the previous custom
+overlay</li>
+<li>Wizard's tower clue solutions now indicate the nearby fairy ring for convenience</li>
+<li>The stairway to the task-only Kurask room and Godwars crossbow climbing rocks are now highlighted</li>
+<li>Weiss and Troll stronghold basalt teleports and Kharedst's Memoirs teleports have been added to
+the World Map plugin</li>
+<li>The Ape Atoll Arceuus teleport location has been fixed in the World Map plugin</li>
+<li>Dark crabs have been added to the Fishing plugin</li>
+<li>Quest screenshots now use a standardized naming format</li>
+<li>The Chambers of Xeric party size overlay indicator is now hidden when raiding solo</li>
+<li>Ogre bellows now display the number of charges they contain</li>
+<li>NPCs highlighted with the slayer plugin are now immediately un-highlighted upon task completion</li>
+<li>Fixed 2005 interface swapper sprites for quest and spellbook icons</li>
+<li>The clue scroll plugin now checks for sets across the user's inventory and equipped items</li>
+<li>Upon killing Grotesque Guardians, a timer is created showing the time until the instance closes</li>
+</ul>
+<p>Enjoy!</p>
+<p>- Jordan</p>
+<h3 id="new-commits">New commits</h3>
+<p>We had 14 contributors this release!</p>
+<pre><code>Adam (2):
+      http-service: add caching for hiscore lookups
+      http-api: use https for hiscore urls
+
+Damen (1):
+      Add Grotesque Guardians instance close timer (#4338)
+
+Jordan Atwood (8):
+      interface styles plugin: Add more error handling
+      Fix SpriteIDs from 2018/08/30 update
+      clue scroll plugin: Check for sets across inventory and equipment
+      timers plugin: Reset fields on shutdown
+      Add home teleport animation and graphic definitions
+      Add minigame teleport button widget info
+      Add home teleport widget info
+      timers plguin: Add teleport cooldown timers
+
+Mack Bryan (3):
+      Add ogre bellows to item charges plugin (#5323)
+      Moved hot-cold dig location 3 tiles east into the correct range.
+      Remove npc highlights on task completed message. (#5416)
+
+Magic fTail (3):
+      Add Quest to quest screenshots
+      WorldMapPlugin: Add tooltip to minigame icons
+      Don't show party size in overlay when solo raiding
+
+Max Weber (7):
+      diaryreqs: Update scrollbar with new length
+      cache: name InterfaceDefinition fields
+      cache: Disassemble CS1s
+      runelite-api: Update widget field names
+      cache: Store ID in ScriptLoader
+      cache: add various world map related opcodes
+      runelite-mixins: Add setter for varcint
+
+Ron Young (1):
+      Add missing widget types to WidgetType class (#5306)
+
+Ruben Amendoeira (1):
+      loot tracker: add view for grouping loot by npc/event
+
+Sebastiaan Vanspauwen (6):
+      Added Kurask Slayer Room Overlay
+      Added Godwars Crossbow Shortcut
+      Worldmap: Added Weiss and Troll Stronghold teleports
+      Worldmap: Fixed Ape Atoll Arceuus Location
+      Worldmap: Added Kharedst's Memoirs teleports
+      Fishing: Added Dark Crab Overlay
+
+Spencer (1):
+      Added fairy ring code to wizard tower clue solutions
+
+Tomas Slusny (14):
+      Make bottom-right snap corner not account for chatbox
+      Fix fishing plugin inventory/equipment check
+      Fix Achievment Diary widget ids
+      Add Sacred Eeels cutting to idle notifier
+      Make fishing overlays use hidden instead of manager
+      Make cannon plugin use hidden instead of manager
+      Make Kourend library use hidden field instead of manager
+      Reorder time tracker tabs by priority
+      Replace Tithe Farm overlay with layoutable widget
+      Deprecate queries with already existing events
+      Add mappings for mouse last pressed millis
+      Use mouse/keyboard idle state properly in IdleNotifier
+      Simulate ItemContainerChange events on plugin startup
+      Remove unnecessary fishing spot configuration
+
+davidyip50 (1):
+      Add troll stronghold portal icon support to POH (#5404)
+
+johnhamilto (1):
+      Add quest name tooltips to the world map (#5410)
+
+oplosthee (1):
+      Add Weiss herb patch to the farming tracker
+</code></pre></div></div><div><hr>Developed with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i> using <a href="https://getbootstrap.com/">Bootstrap</a>, <a href="https://reactjs.org/">React</a> and <a href="https://fontawesome.com/">Font Awesome</a><a href="http://localhost:8000/atom.xml" class="float-right"><i class="fas fa-rss"></i> Subscribe via RSS</a></div></div></div></div><script>!function(o){function e(e){for(var c,f,d=e[0],t=e[1],r=e[2],n=0,a=[];n<d.length;n++)f=d[n],i[f]&&a.push(i[f][0]),i[f]=0;for(c in t)Object.prototype.hasOwnProperty.call(t,c)&&(o[c]=t[c]);for(s&&s(e);a.length;)a.shift()();return u.push.apply(u,r||[]),b()}function b(){for(var e,c=0;c<u.length;c++){for(var f=u[c],d=!0,t=1;t<f.length;t++){var r=f[t];0!==i[r]&&(d=!1)}d&&(u.splice(c--,1),e=l(l.s=f[0]))}return e}var f={},a={86:0},i={86:0},u=[];function l(e){if(f[e])return f[e].exports;var c=f[e]={i:e,l:!1,exports:{}};return o[e].call(c.exports,c,c.exports,l),c.l=!0,c.exports}l.e=function(u){var e=[];a[u]?e.push(a[u]):0!==a[u]&&{9:1,10:1,11:1}[u]&&e.push(a[u]=new Promise(function(e,d){for(var c="static/css/"+({}[u]||u)+"."+{1:"31d6cfe0",2:"31d6cfe0",3:"31d6cfe0",4:"31d6cfe0",5:"31d6cfe0",6:"31d6cfe0",7:"31d6cfe0",8:"31d6cfe0",9:"2e0b4ed7",10:"b92897f8",11:"905337e2",12:"31d6cfe0",13:"31d6cfe0",14:"31d6cfe0",15:"31d6cfe0",16:"31d6cfe0",17:"31d6cfe0",18:"31d6cfe0",19:"31d6cfe0",20:"31d6cfe0",21:"31d6cfe0",22:"31d6cfe0",23:"31d6cfe0",24:"31d6cfe0",25:"31d6cfe0",26:"31d6cfe0",27:"31d6cfe0",28:"31d6cfe0",29:"31d6cfe0",30:"31d6cfe0",31:"31d6cfe0",32:"31d6cfe0",33:"31d6cfe0",34:"31d6cfe0",35:"31d6cfe0",36:"31d6cfe0",37:"31d6cfe0",38:"31d6cfe0",39:"31d6cfe0",40:"31d6cfe0",41:"31d6cfe0",42:"31d6cfe0",43:"31d6cfe0",44:"31d6cfe0",45:"31d6cfe0",46:"31d6cfe0",47:"31d6cfe0",48:"31d6cfe0",49:"31d6cfe0",50:"31d6cfe0",51:"31d6cfe0",52:"31d6cfe0",53:"31d6cfe0",54:"31d6cfe0",55:"31d6cfe0",56:"31d6cfe0",57:"31d6cfe0",58:"31d6cfe0",59:"31d6cfe0",60:"31d6cfe0",61:"31d6cfe0",62:"31d6cfe0",63:"31d6cfe0",64:"31d6cfe0",65:"31d6cfe0",66:"31d6cfe0",67:"31d6cfe0",68:"31d6cfe0",69:"31d6cfe0",70:"31d6cfe0",71:"31d6cfe0",72:"31d6cfe0",73:"31d6cfe0",74:"31d6cfe0",75:"31d6cfe0",76:"31d6cfe0",77:"31d6cfe0",78:"31d6cfe0",79:"31d6cfe0",80:"31d6cfe0",81:"31d6cfe0",82:"31d6cfe0",83:"31d6cfe0",85:"31d6cfe0"}[u]+".chunk.css",t=l.p+c,f=document.getElementsByTagName("link"),r=0;r<f.length;r++){var n=(o=f[r]).getAttribute("data-href")||o.getAttribute("href");if("stylesheet"===o.rel&&(n===c||n===t))return e()}var a=document.getElementsByTagName("style");for(r=0;r<a.length;r++){var o;if((n=(o=a[r]).getAttribute("data-href"))===c||n===t)return e()}var b=document.createElement("link");b.rel="stylesheet",b.type="text/css",b.onload=e,b.onerror=function(e){var c=e&&e.target&&e.target.src||t,f=new Error("Loading CSS chunk "+u+" failed.\n("+c+")");f.request=c,d(f)},b.href=t,document.getElementsByTagName("head")[0].appendChild(b)}).then(function(){a[u]=0}));var f=i[u];if(0!==f)if(f)e.push(f[2]);else{var c=new Promise(function(e,c){f=i[u]=[e,c]});e.push(f[2]=c);var d,t=document.getElementsByTagName("head")[0],r=document.createElement("script");r.charset="utf-8",r.timeout=120,l.nc&&r.setAttribute("nonce",l.nc),r.src=l.p+"static/js/"+({}[u]||u)+"."+{1:"a8016189",2:"fea0b376",3:"e1464c82",4:"de10dd97",5:"e7c08d09",6:"5576aac5",7:"b126752d",8:"2f2428e7",9:"9946f572",10:"c44434a1",11:"a89fd766",12:"09a18344",13:"038f702f",14:"b1ac9748",15:"679a558e",16:"23f96f6c",17:"09e0ce2a",18:"13bb53b4",19:"ec2862e5",20:"e2a76639",21:"488dab07",22:"aed648cf",23:"10b22904",24:"c3b1da90",25:"6cd70c8b",26:"1cbb688d",27:"2a461c13",28:"b9d6b0ab",29:"3e32d358",30:"9e5246de",31:"e5122918",32:"a0d29317",33:"5bd507ed",34:"b1278257",35:"db8ba828",36:"c133d82a",37:"a0c170a7",38:"23ceebd7",39:"af8fd79c",40:"5b57064a",41:"79b0be73",42:"e206c655",43:"bde14f26",44:"dc895cb2",45:"0d2d0be3",46:"cb048be4",47:"7c228c23",48:"2e88bd4f",49:"c8142daa",50:"5bd40fa5",51:"c0b87916",52:"b0ef160a",53:"ad2ba249",54:"2b9f3a50",55:"19ae9a7b",56:"0d2f6e4d",57:"881084df",58:"71b85f97",59:"bd2e74f4",60:"db6b55af",61:"4858a10b",62:"e3c5083f",63:"dc284bbc",64:"a1fbae2a",65:"6ec56a5f",66:"f638475e",67:"b3f855ed",68:"aa053bb1",69:"24f2e4b6",70:"ef0bb42d",71:"0502f2a7",72:"f0ccbd6b",73:"c180d7d7",74:"c110e80d",75:"7a7dd41c",76:"715f82c8",77:"96cfd971",78:"f9409bf5",79:"8228bed5",80:"2e483ebf",81:"79866e53",82:"1358b24a",83:"4a3b5c01",85:"2241a40c"}[u]+".chunk.js",d=function(e){r.onerror=r.onload=null,clearTimeout(n);var c=i[u];if(0!==c){if(c){var f=e&&("load"===e.type?"missing":e.type),d=e&&e.target&&e.target.src,t=new Error("Loading chunk "+u+" failed.\n("+f+": "+d+")");t.type=f,t.request=d,c[1](t)}i[u]=void 0}};var n=setTimeout(function(){d({type:"timeout",target:r})},12e4);r.onerror=r.onload=d,t.appendChild(r)}return Promise.all(e)},l.m=o,l.c=f,l.d=function(e,c,f){l.o(e,c)||Object.defineProperty(e,c,{enumerable:!0,get:f})},l.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},l.t=function(c,e){if(1&e&&(c=l(c)),8&e)return c;if(4&e&&"object"==typeof c&&c&&c.__esModule)return c;var f=Object.create(null);if(l.r(f),Object.defineProperty(f,"default",{enumerable:!0,value:c}),2&e&&"string"!=typeof c)for(var d in c)l.d(f,d,function(e){return c[e]}.bind(null,d));return f},l.n=function(e){var c=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(c,"a",c),c},l.o=function(e,c){return Object.prototype.hasOwnProperty.call(e,c)},l.p="/",l.oe=function(e){throw console.error(e),e};var c=window.webpackJsonp=window.webpackJsonp||[],d=c.push.bind(c);c.push=e,c=c.slice();for(var t=0;t<c.length;t++)e(c[t]);var s=d;b()}([])</script><script src="/static/js/84.be32f7c0.chunk.js"></script><script src="/static/js/main.039ddad7.chunk.js"></script></body></html>
